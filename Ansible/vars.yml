@@ -10,3 +10,17 @@
     - name: Print variable
       ansible.builtin.debug:
         msg: URL_PLAY - {{ URL_PLAY }}
+
+    - name: Task variable
+      ansible.builtin.debug:
+        msg: URL_TASK - {{ URL_TASK }}
+      vars:
+        URL_TASK: tasks.example.com  
+    
+    - name: Print variable
+      ansible.builtin.debug:
+        msg: URL_PLAY - {{ URL_PLAY }}   
+
+    - name: Task variable
+      ansible.builtin.debug:
+        msg: "{{ URL_CUSTOM }}" 
