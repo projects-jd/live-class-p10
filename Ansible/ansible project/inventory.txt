@@ -1,5 +1,5 @@
 [mysql]
-172.31.75.51
+172.31.20.250
 
 [mysql:vars]
 ansible_user=ec2-user
